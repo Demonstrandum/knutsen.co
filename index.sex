@@ -1,0 +1,39 @@
+(!DOCTYPE html)
+(html :lang en
+  (head
+    (%include "head.sex")
+    (title Knutsen | Home))
+  (body
+    (div :id container
+      (h1 Knutsen)
+      (p This is the homepage for the Knutsen \(web, mail, &c.\)
+         server.  Hosted on a (strong VPS) \(Virtual Private Server\)
+         somewhere in London.)
+
+      (h2 Sub–domains)
+      (p Some web-sites currently hosted under subdomains of
+         knutsen.co, are:)
+      (ul :class subdomains
+        (li (a :href "https://user.knutsen.co" user.knutsen.co)
+            (span \(e-mail password change.\)))
+        (li (a :href "https://git.knutsen.co" git.knutsen.co)
+            (span \(source code for any projects on here.\)))
+        (li (a :href "https://canvas.knutsen.co" canvas.knutsen.co))
+        (li (a :href "https://me.knutsen.co" me.knutsen.co)
+            (span \(old site, what used to be this page.\)))
+        (li (a :href "https://fam.knutsen.co" fam.knutsen.co)))
+
+      (h2 Git/Github)
+      (p Github acccount: (a :href "https://github.com/Demonstrandum"
+         github.com/Demonstrandum). I host my own git server on this VPS,
+         you can find it at (a :href "https://git.knutsen.co"
+         git.knutsen.co). It supports ssh for cloning and pushing,
+         \(if you wish you wish to host something, just give me your
+          public key\), you can also clone \(but only clone\)
+          if you dont have an account, using the (code git://) protocol.)
+
+      (h2 E–mail)
+      (p E-mail me any time, for questions about the server, the
+         website, or getting your own (code @knutsen.co) e-mail.)
+      (a :href "mailto:samuel@knutsen.co" samuel@knutsen.co))))
+
