@@ -1,7 +1,7 @@
 SEAM := $(shell command -v seam 2> /dev/null)
 
 ifndef SEAM
-	$(error "\`seam' executable not available. Please install")
+$(error "`seam' executable not available. Please install")
 endif
 
 HTML_FILES := index.html
