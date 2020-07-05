@@ -35,5 +35,5 @@
       (h2 E–mail)
       (p E-mail me any time, for questions about the server, the
          website, or getting your own (code @knutsen.co) e-mail.)
-      (a :href "mailto:samuel@knutsen.co" samuel@knutsen.co))))
+      (center (a :href "mailto:postmaster@knutsen.co" postmaster@knutsen.co)))))
 
