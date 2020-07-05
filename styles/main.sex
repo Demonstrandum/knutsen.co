@@ -10,13 +10,15 @@
 
 (body
   :display flex
-  :height 95%
-  :width 100%
+  :padding 2em
+  :width (calc (- 100% 4em))
+  :min-height (calc (- 95% 4em))
   :align-items center
   :justify-content center)
 
 (#container
-  :width 40em)
+  :margin (auto 0 auto 0)
+  :max-width 40em)
 
 (h1 , h2 , h3
   :font-family ("Playfair Display SC" , serif)
