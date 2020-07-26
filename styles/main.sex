@@ -17,6 +17,13 @@
   :align-items center
   :justify-content center)
 
+(li :list-style none)
+(li:before :content '*'
+           :font-family ("IBM Plex Mono"
+                        , monospace)
+           :margin-right 0.6em
+           :vertical-align bottom)
+
 (#container
   :margin (auto 0 auto 0)
   :max-width 40em)
