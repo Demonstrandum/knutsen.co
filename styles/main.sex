@@ -32,6 +32,7 @@
 
 (h1 , h2 , h3
   :font-family ("Playfair Display SC" , serif)
+  :font-variant-ligatures none
   :font-weight 400)
 
 (h2 , h3
@@ -54,3 +55,9 @@
   :background #f4f4f4
   :border (1px solid #e4e4e4)
   :border-radius 4px)
+
+(img.card
+  :max-width 100%
+  :border-radius 5pt
+  :border (1px solid #0002)
+  :filter (drop-shadow 0 2pt 5pt #0002))

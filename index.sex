@@ -4,35 +4,27 @@
     (%include "head.sex")
     (title Knutsen | Home))
   (body
+    (%include "header.sex")
     (div :id container
       (h1 Knutsen)
       (p This is the homepage for the Knutsen \(web, mail, &c.\)
          server.  Hosted on a (strong VPS) \(Virtual Private Server\)
          somewhere in London.)
 
-      (h2 Sub–domains)
-      (p Some web-sites currently hosted under subdomains of
-         knutsen.co, are:)
-      (ul :class subdomains
-        (li (a :href "https://user.knutsen.co" user.knutsen.co)
-            (span \(e-mail password change.\)))
-        (li (a :href "https://git.knutsen.co" git.knutsen.co)
-            (span \(source code for any projects on here.\)))
-        (li (a :href "https://canvas.knutsen.co" canvas.knutsen.co))
-        (li (a :href "https://me.knutsen.co" me.knutsen.co)
-            (span \(old site, what used to be this page.\)))
-        (li (a :href "https://fam.knutsen.co" fam.knutsen.co)))
+      (h2 Source Code)
+      (ul
+        (li local: (a :href "https://git.knutsen.co" git.knutsen.co).)
+        (li sourcehut: (code (a :href "https://git.sr.ht/~knutsen" ~knutsen)))
+        (li github: (code (a :href "https://github.com/Demonstrandum" Demonstrandum).)))
 
-      (h2 Git/Github)
-      (p Github acccount: (a :href "https://github.com/Demonstrandum"
-         github.com/Demonstrandum). I host my own git server on this VPS,
-         you can find it at (a :href "https://git.knutsen.co"
-         git.knutsen.co). It supports (code ssh) for cloning and pushing,
-         \(if you wish you wish to host something, just give me your
-          public key\), you can also clone \(but only clone\)
-          if you dont have an account, using the (code git://) protocol.)
+      (h2 Public Keys)
+      (ul
+        (li PGP (code (a :href "./keys/pgp_4096_rsa.pub" 693BD1EE8BD77B43)))
+        (li SSH (code (a :href "./keys/ssh_4096_rsa.pub" 4b:42:d8:30:43:65:53:21:be:53:97:49:bc:5f:96:44)))
+        (li ETH (code 0x1C7fC5d267C3CEBc4AC875abB424b29dE5113071)))
 
       (h2 E–mail)
+      (p Want to log-in with your e-mail? See (a :href "./email.html" this page).)
       (p E-mail me any time, for questions about the server, the
          website, or getting your own (code @knutsen.co) e-mail.)
       (center (a :href "mailto:postmaster@knutsen.co" postmaster@knutsen.co)))))

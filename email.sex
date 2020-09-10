@@ -1,0 +1,33 @@
+(!DOCTYPE html)
+(html :lang en
+  (head
+    (%include "head.sex")
+    (title Knutsen | E-mail))
+  (body
+    (%include "header.sex")
+    (div :id container
+      (h1 Authenticating)
+      (p You'll need an E-mail client, such as
+         (a :href "https://www.thunderbird.net/" Thunderbird) \(for desktop\),
+         or (a :href "https://sparkmailapp.com/" Spark) \(for mobile\).)
+
+      (h2 Configuration)
+      (p In this example, (code myname) will be your username, hence your
+         E-mail will be (code myname@knutsen.co).
+         Note that these are (em not) the same)
+      (p Your password should already be known, and can be changed at
+         (a :href "https://user.knutsen.co" user.knutsen.co).)
+      (p Your (em incoming server) will be IMAP,
+         and your (em outgoing) will be SMTP, naturally.)
+
+      (ul
+        (li IMAP Server: (code mail.knutsen.co:993) over SSL/TLS)
+        (li IMAP Username: (code myname))
+        (li SMTP Server: (code mail.knutsen.co:587) over STARTTLS)
+        (li SMTP Username: (code myname)))
+
+      (h2 Example)
+      (p Here is an example Thunderbird configuration:)
+      (img :class card
+           :alt "Configuration example"
+           :src "./media/email-thunderbird.png"))))

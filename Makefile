@@ -4,12 +4,15 @@ ifndef SEAM
 $(error "`seam' executable not available. Please install")
 endif
 
-HTML_FILES := index.html
+HTML_FILES := index.html email.html
 
-all: $(HTML_FILES)
+all: clean $(HTML_FILES)
 
 index.html:
 	$(SEAM) --html index.sex > index.html
+
+email.html:
+	$(SEAM) --html email.sex > email.html
 
 install:
 ifndef path
@@ -20,3 +23,5 @@ endif
 
 clean:
 	rm -f $(HTML_FILES)
+
+.PHONY: all clean install
