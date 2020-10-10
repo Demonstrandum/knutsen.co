@@ -1,0 +1,12 @@
+(time :id date
+      :title "Date website was last compiled."
+      ~(%date "%Y.%m.%d"))
+
+(style
+  (#date
+    :font-family ("IBM Plex Mono", monospace)
+    :font-size 0.9em
+    :position fixed
+    :bottom 1.8em
+    :right 2.2em
+    :color (rgba 0 0 0 0.4)))

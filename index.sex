@@ -17,15 +17,17 @@
         (li sourcehut: (code (a :href "https://git.sr.ht/~knutsen" ~knutsen)))
         (li github: (code (a :href "https://github.com/Demonstrandum" Demonstrandum).)))
 
-      (h2 Public Keys)
+      (h2 Public Keys/IDs)
       (ul
         (li PGP (code (a :href "./keys/pgp_4096_rsa.pub" 693BD1EE8BD77B43)))
         (li SSH (code (a :href "./keys/ssh_4096_rsa.pub" 4b:42:d8:30:43:65:53:21:be:53:97:49:bc:5f:96:44)))
-        (li ETH (code 0x1C7fC5d267C3CEBc4AC875abB424b29dE5113071)))
+        (li ETH (code 0x1C7fC5d267C3CEBc4AC875abB424b29dE5113071))
+        (li Urbit (code ~minten-migmug)))
 
       (h2 E–mail)
       (p Want to log-in with your e-mail? See (a :href "./email.html" this page).)
       (p E-mail me any time, for questions about the server, the
          website, or getting your own (code @knutsen.co) e-mail.)
-      (center (a :href "mailto:postmaster@knutsen.co" postmaster@knutsen.co)))))
+      (center (a :href "mailto:postmaster@knutsen.co" postmaster@knutsen.co))
+      (%include "footer.sex"))))
 

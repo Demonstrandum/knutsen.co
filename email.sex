@@ -30,4 +30,5 @@
       (p Here is an example Thunderbird configuration:)
       (img :class card
            :alt "Configuration example"
-           :src "./media/email-thunderbird.png"))))
+           :src "./media/email-thunderbird.png")
+      (%include "footer.sex"))))
