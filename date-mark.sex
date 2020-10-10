@@ -1,5 +1,5 @@
 (time :id date
-      :title "Date website was last compiled."
+      :title "Date webpage was last compiled."
       ~(%date "%Y.%m.%d"))
 
 (style

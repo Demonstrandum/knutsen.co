@@ -18,6 +18,14 @@
   :align-items center
   :justify-content center)
 
+("::selection"
+  :background #66666647
+  :color #222)
+
+("::-moz-selection"
+  :background #66666647
+  :color #222)
+
 (li :list-style none)
 (li:before :content '*'
            :display inline-block
