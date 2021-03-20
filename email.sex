@@ -1,12 +1,12 @@
+(%define title "E-mail")
 (!DOCTYPE html)
 (html :lang en
   (head
-    (%include "head.sex")
-    (title Knutsen | E-mail))
+    (%include "head.sex"))
   (body
     (%include "header.sex")
     (div :id container
-      (h1 Authenticating)
+      (%nav Authenticating)
       (p You'll need an E-mail client, such as
          (a :href "https://www.thunderbird.net/" Thunderbird) \(for desktop\),
          or (a :href "https://sparkmailapp.com/" Spark) \(for mobile\).)

@@ -1,3 +1,26 @@
+(%define (nav title)
+  (nav (h1 %title)
+       (ul
+         (li (a :href "/" /home))
+         (li (a :href "/about" /about))
+         (li (a :href "/email" /email))
+         (li (a :href "https://canvas.knutsen.co" /canvas)))))
+
+(style
+  (nav :display flex
+       :justify-content space-between)
+  (nav h1 :font-size 2em
+          :display inline-block)
+  (nav ul :list-style none
+          :margin (auto 0)
+          :display inline-block)
+  (nav li :margin-left 0.5em
+          :display inline-block)
+  (nav li:before :display none))
+
+(%ifdef title
+    (title %title" | Knutsen")
+    (%log "No title set."))
 (meta :http-equiv "Content-Type" :content "text/html; charset=UTF-8")
 (meta :name viewport :content "width=device-width, initial-scale=1.0")
 (link :rel icon :type image/png :href "favicon.png")

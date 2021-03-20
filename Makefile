@@ -4,15 +4,12 @@ ifndef SEAM
 $(error "`seam' executable not available. Please install")
 endif
 
-HTML_FILES := index.html email.html
+HTML_FILES := index.html email.html about.html
 
 all: clean $(HTML_FILES)
 
-index.html:
-	$(SEAM) --html index.sex > index.html
-
-email.html:
-	$(SEAM) --html email.sex > email.html
+%.html: %.sex
+	$(SEAM) --html $< > $@
 
 install:
 ifndef path

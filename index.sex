@@ -1,12 +1,13 @@
+(%define title "Home")
+
 (!DOCTYPE html)
 (html :lang en
   (head
-    (%include "head.sex")
-    (title Knutsen | Home))
+    (%include "head"))
   (body
-    (%include "header.sex")
+    (%include "header")
     (div :id container
-      (h1 Knutsen)
+      (%nav Knutsen)
       (p This is the homepage for the Knutsen \(web, mail, &c.\)
          server.  Hosted on a (strong VPS) \(Virtual Private Server\)
          somewhere in London.)
@@ -29,5 +30,5 @@
       (p E-mail me any time, for questions about the server, the
          website, or getting your own (code @knutsen.co) e-mail.)
       (center (a :href "mailto:postmaster@knutsen.co" postmaster@knutsen.co))
-      (%include "footer.sex"))))
+      (%include "footer"))))
 

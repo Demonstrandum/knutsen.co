@@ -1,2 +1,5 @@
 # Generated files
 *.html
+
+# Archives
+*.tar*

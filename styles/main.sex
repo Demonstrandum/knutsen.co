@@ -39,7 +39,7 @@
   :overflow auto
   :padding (2em 1em)
   :margin (auto 0 auto 0)
-  :max-width 40em)
+  :width 40em)
 
 (h1 , h2 , h3
   :font-family ("Playfair Display SC" , serif)

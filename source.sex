@@ -1,0 +1,10 @@
+(a :id source-code :href "https://git.knutsen.co/knutsen.co/files" source)
+
+(style
+  (#source-code
+    :position fixed
+    :bottom 1.8em
+    :left 2.2em
+    :color (rgba 0 0 0 0.4))
+  (#source-code:hover
+    :color (rgba 0 0 0 0.9)))

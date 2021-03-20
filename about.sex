@@ -1,0 +1,13 @@
+(%define title "About")
+
+(!DOCTYPE html)
+(html :lang en
+  (head
+    (%include "head"))
+  (body
+    (%include "header")
+    (div :id container
+        (%nav %title)
+        (p My name is Samuel.)
+        (img :src "https://knutsen.co/frcat.png" :alt "This is me.")
+        (%include "footer"))))
