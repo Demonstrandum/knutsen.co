@@ -2,9 +2,9 @@
 (!DOCTYPE html)
 (html :lang en
   (head
-    (%include "head.sex"))
+    (%include "components/head.sex"))
   (body
-    (%include "header.sex")
+    (%include "components/header.sex")
     (div :id container
       (%nav Authenticating)
       (p You'll need an E-mail client, such as
@@ -31,4 +31,4 @@
       (img :class card
            :alt "Configuration example"
            :src "./media/email-thunderbird.png")
-      (%include "footer.sex"))))
+      (%include "components/footer.sex"))))

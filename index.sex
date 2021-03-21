@@ -3,9 +3,9 @@
 (!DOCTYPE html)
 (html :lang en
   (head
-    (%include "head"))
+    (%include "components/head"))
   (body
-    (%include "header")
+    (%include "components/header")
     (div :id container
       (%nav Knutsen)
       (p This is the homepage for the Knutsen \(web, mail, &c.\)
@@ -30,5 +30,5 @@
       (p E-mail me any time, for questions about the server, the
          website, or getting your own (code @knutsen.co) e-mail.)
       (center (a :href "mailto:postmaster@knutsen.co" postmaster@knutsen.co))
-      (%include "footer"))))
+      (%include "components/footer"))))
 

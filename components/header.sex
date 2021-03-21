@@ -8,9 +8,9 @@
     :font-family ("Playfair Display SC" , serif)
     :font-size 3em
     :text-decoration none
-    :border-right (1px solid #000)
-    :border-left  (1px solid #000)
-    :border-bottom-right-radius 5pt
+    :border-right (0px solid #000)
+    :border-bottom  (0px solid #000)
+    ;:border-bottom-right-radius 5pt
     :display block
     :margin 0
     :padding (0.2em 0.5em))

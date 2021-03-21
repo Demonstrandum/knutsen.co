@@ -1,0 +1,15 @@
+(footer
+  (%include "components/source")
+  (%include "components/date-mark"))
+
+(style (footer :position fixed
+               :bottom 0 :left 0
+               :width (calc (- 100% 4em))
+               :height 5em
+               :display flex
+               :align-items center
+               :justify-content space-between
+               :padding (0 2em))
+       (@media only screen and :max-width 700px
+         (footer :position absolute)
+         (body :padding-bottom 3em)))

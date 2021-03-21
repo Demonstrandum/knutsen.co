@@ -1,3 +1,0 @@
-(footer
-  (%include "source")
-  (%include "date-mark"))
