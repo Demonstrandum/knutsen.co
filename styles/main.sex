@@ -4,7 +4,9 @@
   :min-height 100%
   :color #000
   :font-size 16px
-  :font-family ('Cantarell' , sans-serif))
+  :font-family ("iA Writer Quattro" , sans-serif)
+  :font-feature-settings normal
+  :font-variation-settings normal)
 
 (body , html
   :margin 0
@@ -16,8 +18,14 @@
   :padding 2em
   :width (calc (- 100% 4em))
   :min-height (calc (- 95% 4em))
- ;:align-items center  ;; For vertical alignment.
-  :justify-content center)
+  ;:align-items center  ;; For vertical alignment.
+  :justify-content center
+  :text-rendering geometricPrecision!important
+  :-webkit-font-smoothing antialiased!important
+  :text-shadow (1px 1px 1px (rgba 0 0 0 .005))
+  :font-size .875rem
+  :line-height 1.25rem
+  )
 
 ("::selection"
   :background #66666647
@@ -31,7 +39,7 @@
 (li:before :content '*'
            :display inline-block
            :width 1em
-           :font-family ("IBM Plex Mono"
+           :font-family ("iA Writer Mono"
                         , monospace)
            :margin (0 0.5em 0 -1em)
            :vertical-align bottom)
@@ -43,30 +51,28 @@
   :width 40em)
 
 (h1 , h2 , h3
-  :font-family ("Playfair Display SC" , serif)
+  :font-family ("Darwin Serif" , serif)
   :font-variant-ligatures none
   :font-weight 400)
 
 (h2 , h3
-    :border-bottom (2px solid #0002)
+    :border-bottom (2px solid #0001)
     :border-radius 2px)
 
 (a
-  :color #555
-  :text-decoration none
-  :transition (.1s all ease)
-  :border-bottom (1px solid))
+  :color #000A
+  :text-decoration-color #0003
+  :transition (.1s all ease))
 
 (a:hover
   :color #000)
 
 (code
-  :font-family ("IBM Plex Mono" , monospace)
-  :font-size 0.8em
+  :font-family ("iA Writer Mono" , monospace)
+  :font-size 0.9em
   :padding (0px 3px 2px 3px)
-  :background #f4f4f4
-  :border (1px solid #e4e4e4)
-  :border-radius 4px
+  :background #00000009
+  :border-radius 2pt
   :white-space pre-wrap
   :white-space -moz-pre-wrap
   :white-space -pre-wrap
@@ -79,3 +85,45 @@
   :border-radius 5pt
   :border (1px solid #0002)
   :filter (drop-shadow 0 2pt 5pt #0002))
+
+(%define quattro-regular-url "https://raw.githubusercontent.com/iaolo/iA-Fonts/master/iA%20Writer%20Quattro/Webfonts/iAWriterQuattroS-Regular.woff2")
+(%define quattro-bold-url "https://raw.githubusercontent.com/iaolo/iA-Fonts/master/iA%20Writer%20Quattro/Webfonts/iAWriterQuattroS-Bold.woff2")
+(%define mono-url "https://raw.githubusercontent.com/iaolo/iA-Fonts/master/iA%20Writer%20Mono/Webfonts/iAWriterMonoS-Regular.woff2")
+(%define header-url "https://darwintypeface.com/DarwinSerif-Regular.woff2")
+
+(@font-face
+  :font-family "iA Writer Quattro"
+  :src ((url %quattro-regular-url) (format "woff2"))
+  :font-display swap
+  :font-weight 400
+  :font-style normal)
+
+(@font-face
+  :font-family "iA Writer Quattro"
+  :src ((url %quattro-bold-url) (format "woff2"))
+  :font-display swap
+  :font-weight 700
+  :font-style normal)
+
+(@font-face
+  :font-family "iA Writer Mono"
+  :src ((url %mono-url) (format "woff2"))
+  :font-display swap
+  :font-weight 400
+  :font-style normal)
+
+(@font-face
+  :font-family "Darwin Serif"
+  :src ((url %header-url) (format "woff2"))
+  :font-display swap
+  :font-weight 400
+  :font-style normal)
+
+
+
+
+
+
+
+
+
