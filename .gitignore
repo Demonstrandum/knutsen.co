@@ -3,3 +3,8 @@
 
 # Archives
 *.tar*
+
+# Misc.
+._*
+*.ini
+.DS*
