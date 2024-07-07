@@ -4,6 +4,6 @@
 
 (style
   (#date
-    :font-family ("IBM Plex Mono", monospace)
+    :font-family ("iA Writer Mono", monospace)
     :font-size 0.9em
     :color (rgba 0 0 0 0.4)))

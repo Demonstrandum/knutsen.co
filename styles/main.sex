@@ -86,44 +86,31 @@
   :border (1px solid #0002)
   :filter (drop-shadow 0 2pt 5pt #0002))
 
-(%define quattro-regular-url "https://raw.githubusercontent.com/iaolo/iA-Fonts/master/iA%20Writer%20Quattro/Webfonts/iAWriterQuattroS-Regular.woff2")
-(%define quattro-bold-url "https://raw.githubusercontent.com/iaolo/iA-Fonts/master/iA%20Writer%20Quattro/Webfonts/iAWriterQuattroS-Bold.woff2")
-(%define mono-url "https://raw.githubusercontent.com/iaolo/iA-Fonts/master/iA%20Writer%20Mono/Webfonts/iAWriterMonoS-Regular.woff2")
-(%define header-url "https://darwintypeface.com/DarwinSerif-Regular.woff2")
-
 (@font-face
   :font-family "iA Writer Quattro"
-  :src ((url %quattro-regular-url) (format "woff2"))
+  :src ((url "/media/fonts/writer-quattro-regular.woff2") (format "woff2"))
   :font-display swap
   :font-weight 400
   :font-style normal)
 
 (@font-face
   :font-family "iA Writer Quattro"
-  :src ((url %quattro-bold-url) (format "woff2"))
+  :src ((url "/media/fonts/writer-quattro-bold.woff2") (format "woff2"))
   :font-display swap
   :font-weight 700
   :font-style normal)
 
 (@font-face
   :font-family "iA Writer Mono"
-  :src ((url %mono-url) (format "woff2"))
+  :src ((url "/media/fonts/writer-mono-regular.woff2") (format "woff2"))
   :font-display swap
   :font-weight 400
   :font-style normal)
 
 (@font-face
   :font-family "Darwin Serif"
-  :src ((url %header-url) (format "woff2"))
+  :src ((url "/media/fonts/darwin-serif-regular.woff2") (format "woff2"))
   :font-display swap
   :font-weight 400
   :font-style normal)
-
-
-
-
-
-
-
-
 
