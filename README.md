@@ -11,3 +11,14 @@ After that, it's just to run the Makefile:
 $ make clean
 $ make
 ```
+
+### Git LFS
+
+If sourced from somewhere other than GitHub, remember to configure the repository
+to use GitHub's LFS.
+
+```
+$ git config lfs.url https://github.com/Demonstrandum/knutsen.co.git/info/lfs
+```
+
+This must be done in any repository, whether uploading or downloading files over LFS.
