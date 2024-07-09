@@ -86,6 +86,13 @@
   :border (1px solid #0002)
   :filter (drop-shadow 0 2pt 5pt #0002))
 
+(img.badge
+  :vertical-align middle
+  :background-color black
+  :padding 3px
+  :border-radius 3px
+  :height 10px)
+
 (@font-face
   :font-family "iA Writer Quattro"
   :src ((url "/media/fonts/writer-quattro-regular.woff2") (format "woff2"))

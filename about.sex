@@ -8,6 +8,6 @@
     (%include "components/header")
     (div :id container
         (%nav %title)
-        (p My name is Samuel.)
+        (p My name is Samuel, 克努特之子.)
         (img :src "https://knutsen.co/frcat.png" :alt "This is me.")
         (%include "components/footer"))))

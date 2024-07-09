@@ -23,7 +23,7 @@
         (li PGP (code (a :href "./keys/pgp_4096_rsa.pub" 693BD1EE8BD77B43)))
         (li SSH (code (a :href "./keys/ssh_4096_rsa.pub" 4b:42:d8:30:43:65:53:21:be:53:97:49:bc:5f:96:44)))
         (li ETH (code 0x1C7fC5d267C3CEBc4AC875abB424b29dE5113071))
-        (li Urbit (code ~minten-migmug)))
+        (li Urbit (code ~minten-migmug) (img :class "badge" :height 16 :src "/media/minten-migmug-small.svg")))
 
       (h2 E–mail)
       (p Want to log-in with your e-mail? See (a :href "./email.html" this page).)
